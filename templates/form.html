@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hair Fall Prediction</title>
+    <link rel="stylesheet" href="/static/style1.css"> <!-- Link to the external CSS file -->
+</head>
+
+<body>
+
+    <header>
+        <h1>Hair Fall Prediction</h1>
+    </header>
+    <form action="{{ url_for( 'user_data' )}}" method="post">
+        <div class="container">
+            <h2>Factors Affecting Hair Fall</h2>
+
+            <!-- Age -->
+            <div class="category">
+                <h3>Age</h3>
+                <input type="number" placeholder="Enter the Age" class="options" name="age">
+            </div>
+            <!-- Genetics -->
+            <div class="category">
+                <h3>Genetics</h3>
+                <select name="gen" class="options">
+                    <option value="">Select</option>
+                    <option value="1">Yes</option>
+                    <option value="0">No</option>
+                </select>
+            </div>
+
+            <!-- Hormonal Changes -->
+            <div class="category">
+                <h3>Hormonal Changes</h3>
+                <select name="hc" class="options">
+                    <option value="">Select</option>
+                    <option value="1">Yes</option>
+                    <option value="0">No</option>
+                </select>
+            </div>
+
+            <!-- Medical Conditions -->
+            <div class="category">
+                <h3>Medical Conditions</h3>
+                <select name="mc" class="options">
+                    <option value="">Select</option>
+                    <option value="5">No Data</option>
+                    <option value="0">Alopecia Areata</option>
+                    <option value="6">Psoriasis</option>
+                    <option value="10">Thyroid Problems</option>
+                    <option value="1">Androgenetic Alopecia</option>
+                    <option value="2">Dermatitis</option>
+                    <option value="3">Dermatosis</option>
+                    <option value="9">Seborrheic Dermatitis</option>
+                    <option value="8">Scalp Infection</option>
+                    <option value="4">Eczema</option>
+                    <option value="7">Ringworm</option>
+                </select>
+            </div>
+
+            <!-- Medications & Treatments -->
+            <div class="category">
+                <h3>Medications & Treatments</h3>
+                <select name="mt" class="options">
+                    <option value="">Select</option>
+                    <option value="2">Rogaine</option>
+                    <option value="2">Antidepressants</option>
+                    <option value="10">Steroids</option>
+                    <option value="6">Heart Medication</option>
+                    <option value="0">Accutane</option>
+                    <option value="1">Antibiotics</option>
+                    <option value="3">Antifungal Cream</option>
+                    <option value="5">Chemotherapy</option>
+                    <option value="4">Blood Pressure Medication</option>
+                    <option value="7">Immunomodulators</option>
+                    <option value="8">No Data</option>
+                </select>
+            </div>
+
+            <!-- Nutritional Deficiencies -->
+            <div class="category">
+                <h3>Nutritional Deficiencies</h3>
+                <select class="options" name="nd">
+                    <option value="">Select</option>
+                    <option value="10">Zinc Deficiency</option>
+                    <option value="8">Vitamin D Deficiency</option>
+                    <option value="0">Biotin Deficiency</option>
+                    <option value="7">Vitamin A Deficiency</option>
+                    <option value="4">Omega-3 Fatty Acids</option>
+                    <option value="5">Protein Deficiency</option>
+                    <option value="2">Magnesium Deficiency</option>
+                    <option value="9">Vitamin E Deficiency</option>
+                    <option value="6">Selenium Deficiency</option>
+                    <option value="3">No Data</option>
+                    <option value="1">Iron Deficiency</option>
+                </select>
+            </div>
+
+            <!-- Stress -->
+            <div class="category">
+                <h3>Stress</h3>
+                <select class="options" name="stress">
+                    <option value="">Select</option>
+                    <option value="2">Moderate</option>
+                    <option value="1">Low</option>
+                    <option value="0">High</option>
+                </select>
+            </div>
+
+            <!-- Poor Hair Care Habits -->
+            <div class="category">
+                <h3>Poor Hair Care Habits</h3>
+                <select name="poor_hair_care_habits" class="options">
+                    <option value="">Select</option>
+                    <option value="no">No</option>
+                    <option value="yes">Yes</option>
+                </select>
+            </div>
+
+            <!-- Environmental Factors -->
+            <div class="category">
+                <h3>Environmental Factors</h3>
+                <select name="environmental_factors" class="options">
+                    <option value="">Select</option>
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                </select>
+            </div>
+
+            <!-- Smoking -->
+            <div class="category">
+                <h3>Smoking</h3>
+                <select name="smoking" class="options">
+                    <option value="">Select</option>
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                </select>
+            </div>
+
+            <!-- Weight Loss -->
+            <div class="category">
+                <h3>Weight Loss</h3>
+                <select  class="options" name="wl">
+                    <option value="">Select</option>
+                    <option value="0">No</option>
+                    <option value="1">Yes</option>
+                </select>
+            </div>
+
+            <!-- Hair Loss -->
+            <div class="category">
+                <h3>Hair Loss</h3>
+                <select class="options" name="hl">
+                    <option value="">Select</option>
+                    <option value="1">Yes</option>
+                    <option value="0">No</option>
+                </select>
+            </div>
+
+            <!-- Submit Button -->
+            <div class="category">
+                <button type="submit" class="submit-btn">Submit</button>
+            </div>
+        </div>
+    </form>    
+    <footer>
+        <p>© 2025 HairFallPredict | All Rights Reserved</p>
+    </footer>
+
+</body>
+
+</html>
